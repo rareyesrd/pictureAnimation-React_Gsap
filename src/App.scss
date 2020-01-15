@@ -1,17 +1,28 @@
 .main{
     .container{
-        width: 700px;
+        width: 70%;
         height: 100vh;
         margin: 0 auto;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         visibility: hidden;
+        h1.title{
+            font-size: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px #b9b4b4;
+            letter-spacing: 23px;
+            text-align: center;
+            opacity: 0;
+        }
     }
 }
 
 .image-container{
-    width: 700px;
-    height: 560px;
+    width: 100%;
+    height: 80%;
     position: relative;
     overflow: hidden;
     &:after{
@@ -24,7 +35,8 @@
         background-color: #fff;
     }
     img{
-        width: 1000px;
+        width: 100%;
+        height: 100%;
         position: absolute;
     };
 }
